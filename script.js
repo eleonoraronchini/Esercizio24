@@ -1,13 +1,16 @@
 const sendButton = document.querySelector(".sendBtn");
 const deleteButton = document.querySelector(".deleteBtn");
 
-const counterElement = document.getElementsByClassName("counter");
+const counterElement = document.getElementById("counter");
 let counter = 0;
 
+//Funzione per aggiornare il contatore ogni secondo
 function updateCounter() {
   counter ++;
   counterElement.textContent = counter;
 }
+
+//Aggiorna il contatore ogni secondo
 setInterval(updateCounter, 1000);
 
 window.addEventListener("DOMContentLoaded", function () {
